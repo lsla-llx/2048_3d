@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/b"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/game_score_tv"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="171dp"
+        android:layout_height="76dp"
+        android:backgroundTint="#8B8A8A"
+        android:fontFamily="serif"
+        android:padding="1dp"
+        android:text="成绩"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/game_field_view"
+        app:layout_constraintEnd_toStartOf="@id/record_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <ImageButton
+        android:id="@+id/goback_button"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/value_icon"
+
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+
+        android:src="@mipmap/goback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <ImageButton
+        android:id="@+id/sound_button"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/value_icon"
+
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+
+        android:src="@mipmap/sound1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <TableLayout
+        android:id="@+id/game_field_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_1_1"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+
+            <Button
+                android:id="@+id/button_1_2"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+
+            <Button
+                android:id="@+id/button_1_3"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+
+            <Button
+                android:id="@+id/button_1_4"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_2_1"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+
+            <Button
+                android:id="@+id/button_2_2"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+
+            <Button
+                android:id="@+id/button_2_3"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+
+            <Button
+                android:id="@+id/button_2_4"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_3_1"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+
+            <Button
+                android:id="@+id/button_3_2"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+
+            <Button
+                android:id="@+id/button_3_3"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+
+            <Button
+                android:id="@+id/button_3_4"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_4_1"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+
+            <Button
+                android:id="@+id/button_4_2"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+
+            <Button
+                android:id="@+id/button_4_3"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+
+            <Button
+                android:id="@+id/button_4_4"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_empty" />
+        </TableRow>
+    </TableLayout>
+
+    <FrameLayout
+        android:id="@+id/transparent_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/game_field_view"
+        app:layout_constraintEnd_toEndOf="@+id/game_field_view"
+        app:layout_constraintStart_toStartOf="@+id/game_field_view"
+        app:layout_constraintTop_toTopOf="@+id/game_field_view">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#92CEF1AB"
+        android:gravity="center_horizontal|center_vertical"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/game_field_view"
+        app:layout_constraintEnd_toEndOf="@+id/game_field_view"
+        app:layout_constraintStart_toStartOf="@+id/game_field_view"
+        app:layout_constraintTop_toTopOf="@+id/game_field_view"
+        tools:text="text" />
+
+    <Button
+        android:id="@+id/record_tv"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="168dp"
+        android:layout_height="77dp"
+        android:backgroundTint="#8B8A8A"
+        android:fontFamily="serif"
+        android:padding="1dp"
+        android:text="最高分"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/game_field_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/game_score_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223" />
+
+    <ImageButton
+        android:id="@+id/start_game_button"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+
+        android:background="@drawable/value_icon"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+
+        android:src="@mipmap/start1"
+        app:layout_constraintBottom_toTopOf="@+id/game_field_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toEndOf="@+id/game_score_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956" />
+
+    <ImageButton
+        android:id="@+id/tool1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+
+        android:background="@drawable/value_icon"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+
+        android:src="@mipmap/tool1"
+        app:layout_constraintBottom_toTopOf="@+id/game_field_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toEndOf="@+id/game_score_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956" />
+</androidx.constraintlayout.widget.ConstraintLayout>
